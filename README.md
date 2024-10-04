@@ -1,6 +1,6 @@
 # ReactJS 2024 Portfolio - Redo 
 
-![Portfolio Link](https://hunterstevenshaw.info/)
+[Portfolio Link](https://hunterstevenshaw.info/)
 
 ## Basic Information 
 
