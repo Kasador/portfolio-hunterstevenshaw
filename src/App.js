@@ -1,16 +1,15 @@
-import './css/App.css';
+// App.js
 import React, { useEffect, useState } from 'react';
+import Desktop from './components/Desktop'; // New component
+import Mobile from './components/Mobile'; // New component
+import './css/App.css'; // Your CSS goes here
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Detect if the client is on mobile or desktop
-    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    
-    if (/android/i.test(userAgent)) {
-      setIsMobile(true);
-    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    const userAgent = navigator.userAgent;
+    if (/android|iPhone|iPad/i.test(userAgent)) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -19,12 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <video autoPlay muted loop className="background-video">
-          <source src={isMobile ? '/assets/video/Mobile_v5_Slow.mp4' : '/assets/video/Desktop.mp4'} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </header>
+      {isMobile ? <Mobile /> : <Desktop />}
     </div>
   );
 }
