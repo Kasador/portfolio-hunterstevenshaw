@@ -6,7 +6,7 @@ function Mobile() {
   return (
     <div id="mobile">
       <video id="video-mobile" autoPlay muted loop>
-        <source src="/assets/video/Mobile_v5_Slow.mp4" type="video/mp4" />
+        <source src="/assets/video/mobile/Mobile_v5_Slow.mp4" type="video/mp4" />
       </video>
       <div id="mobile-main">
         {/* Add your iPhone emulation code here */}

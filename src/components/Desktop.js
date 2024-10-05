@@ -6,7 +6,7 @@ function Desktop() {
   return (
     <div id="desktop">
       <video id="video-desktop" autoPlay muted loop>
-        <source src="/assets/video/Desktop.mp4" type="video/mp4" />
+        <source src="/assets/video/desktop/Desktop.mp4" type="video/mp4" />
       </video>
       <div id="desktop-main">
         {/* Add your Windows 7 emulation code here */}
