@@ -9,8 +9,7 @@ function Mobile() {
         autoPlay="autoplay"
         playsInLine="playsinline" 
         loop="true" 
-        muted="true"
-      >
+        muted="true">
         <source src="/assets/video/mobile/Mobile_v5_Slow.mp4" type="video/mp4" />
       </video>
       <div className="mobile-main">

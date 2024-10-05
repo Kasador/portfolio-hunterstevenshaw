@@ -12,10 +12,10 @@
   
   .video-mobile {
     position: fixed;
-    min-width: 700px;
-    height: 700px;
+    width: 400px;
+    /* height: 700px; */
     left: 50%;
-    top: 50%;
+    top: 53%;
     transform: translate(-50%, -50%);
     z-index: -1;
   }

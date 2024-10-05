@@ -12,11 +12,13 @@
   
   .video-desktop {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 1600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: -1;
+    overflow-x: hidden; 
+    overflow-y: auto;
   }
   
   /* Add more desktop-specific styles */
