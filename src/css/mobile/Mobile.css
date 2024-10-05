@@ -1,0 +1,20 @@
+.mobile {
+    background-image: url(../../../public/assets/img/mobile/iPhone_Wallper_BG_v3.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 260px;
+    height: 545px;
+    left: 50%;
+    top: 48.5%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .video-mobile {
+    position: fixed;
+    width: 260px;
+    height: 545px;
+    z-index: -1;
+  }
+  
+  /* Add more mobile-specific styles */

@@ -1,4 +1,4 @@
-#desktop {
+.desktop {
     background-image: url(/public/assets/img/desktop/Windows7_Login_Screen_BG.png);
     text-align: center;
     position: absolute;
@@ -10,7 +10,7 @@
     box-shadow: 2px 2px 2px 2px #39301e;
   }
   
-  #video-desktop {
+  .video-desktop {
     position: fixed;
     right: 0;
     bottom: 0;
