@@ -1,5 +1,4 @@
 .desktop {
-    /* background-image: url(/public/assets/img/desktop/Windows7_Login_Screen_BG.png); */
     text-align: center;
     position: absolute;
     min-width: 1920px;
@@ -20,10 +19,32 @@
     z-index: -1;
   }
   
+  .bootup-video {
+    position: absolute;
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%, -45%);
+  }
+
+  /* >>>>> MAIN SCREEN STARTS HERE >>>>> */
+  .desktop-main {
+     background-image: url(/public/assets/img/desktop/Windows7_Login_Screen_BG.png);
+     position: absolute;
+     width: 1095px;
+     height: 655px;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -43%);
+     z-index: 1;
+  }
   /* media queries for desktop */
   @media only screen and (max-width: 1700px) {
     .video-desktop {
       width: 90%;
+    }
+    .desktop-main {
+      width: 985px;
+      height: 590px;
     }
   }
   /* Add more desktop-specific styles */
