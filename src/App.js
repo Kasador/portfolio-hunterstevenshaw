@@ -1,8 +1,9 @@
 // App.js
 import React, { useEffect, useState } from 'react';
-import Desktop from './components/Desktop'; // New component
-import Mobile from './components/Mobile'; // New component
-import './css/App.css'; // Your CSS goes here
+import Desktop from './components/Desktop';
+import Mobile from './components/Mobile';
+import './css/App.css';
+import GoogleAnalytics from './services/GoogleAnalytics';
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -16,8 +17,16 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    // This will track page views when the component mounts
+    window.gtag('config', 'G-F3DYVCWGXC', {
+      page_path: window.location.pathname,
+    });
+  }, []);
+
   return (
     <div className="App">
+      <GoogleAnalytics />
       {isMobile ? <Mobile /> : <Desktop />}
     </div>
   );
