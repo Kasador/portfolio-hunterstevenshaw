@@ -30,6 +30,7 @@
   .desktop-main {
      background-image: url(/public/assets/img/desktop/Windows7_Login_Screen_BG.png);
      position: absolute;
+     background-size: cover;
      width: 1095px;
      height: 655px;
      left: 50%;
