@@ -25,7 +25,7 @@ function Desktop() {
       {/* Desktop content (login or anything else) */}
       {isBootupComplete && (
         <div className="desktop-main">
-          {/* Your Windows 7 emulation code or login screen */}
+          {/* Windows 7 emulation code or login screen */}
           <h2>Windows 7 Login Screen</h2>
         </div>
       )}

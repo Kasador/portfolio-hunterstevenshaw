@@ -1,23 +1,38 @@
 .mobile {
-    background-image: url(../../../public/assets/img/mobile/iPhone_Wallper_BG_v3.jpg);
-    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    width: 260px;
-    height: 545px;
+    min-width: 460px;
+    /* height: 545px; */
     left: 50%;
     top: 48.5%;
     transform: translate(-50%, -50%);
-    z-index: 1;
   }
   
   .video-mobile {
     position: fixed;
-    width: 400px;
-    /* height: 700px; */
+    width: 450px;
     left: 50%;
     top: 53%;
     transform: translate(-50%, -50%);
     z-index: -1;
   }
   
+  .bootup-video-phone {
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* >>>>> MAIN SCREEN STARTS HERE >>>>> */
+  .mobile-main {
+     background-image: url(/public/assets/img/mobile/iPhone_Wallper_BG_v3.jpg);
+     position: absolute;
+     background-size: cover;
+     width: 250px;
+     height: 523px;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -51.2%);
+     z-index: 1;
+  }
   /* Add more mobile-specific styles */
