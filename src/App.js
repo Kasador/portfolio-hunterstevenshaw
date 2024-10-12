@@ -1,9 +1,9 @@
-// App.js
 import React, { useEffect, useState } from 'react';
 import Desktop from './components/Desktop';
 import Mobile from './components/Mobile';
 import './css/App.css';
 import GoogleAnalytics from './services/GoogleAnalytics';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Import Routes instead of Switch
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -17,18 +17,14 @@ function App() {
     }
   }, []);
 
-  useEffect(() => {
-    // This will track page views when the component mounts
-    window.gtag('config', 'G-F3DYVCWGXC', {
-      page_path: window.location.pathname,
-    });
-  }, []);
-
   return (
-    <div className="App">
+    <Router>
       <GoogleAnalytics />
-      {isMobile ? <Mobile /> : <Desktop />}
-    </div>
+      <Routes> {/* Use Routes instead of Switch */}
+        <Route path="/" element={isMobile ? <Mobile /> : <Desktop />} />
+        {/* Add more routes if necessary */}
+      </Routes>
+    </Router>
   );
 }
 
