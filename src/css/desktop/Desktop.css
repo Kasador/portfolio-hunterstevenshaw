@@ -38,7 +38,7 @@
      z-index: 1;
   }
   /* media queries for desktop */
-  @media only screen and (max-width: 1700px) {
+  /* @media only screen and (max-width: 1700px) {
     .video-desktop {
       width: 90%;
     }
@@ -46,5 +46,5 @@
       width: 985px;
       height: 590px;
     }
-  }
+  } */
   /* Add more desktop-specific styles */
