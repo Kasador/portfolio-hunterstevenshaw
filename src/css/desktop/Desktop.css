@@ -24,18 +24,50 @@
     left: 50%;
     transform: translate(-50%, -45%);
   }
+
+  /* login info */
+  .login-wrapper {
+    position: absolute;
+    top: 220px;
+    right: 485px;
+  }
+
+  .login-picture-wrapper {
+    position: relative; /* Allows the image inside to be positioned relative to the wrapper */
+    width: 140px;
+    height: 140px;
+    background-image: url('/src/img/desktop/login_screen/Border_Gradient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Inside image */
+  .login-picture {
+    width: 115px;
+    height: 117px;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+    right: 1px;
+  }
+
+  /* footer */
   .login-screen footer {
     position: absolute;
     bottom: 20px;
     right: 455px;
   }
+
   .windows7-logo {
     width: 180px;
   }
 
   /* >>>>> MAIN SCREEN STARTS HERE >>>>> */
   .desktop-main {
-     background-image: url(/src/img/desktop/Windows7_Login_Screen_BG.png);
+     background-image: url(/src/img/desktop/login_screen/Windows7_Login_Screen_BG.png);
      position: absolute;
      background-size: cover;
      width: 1095px;
