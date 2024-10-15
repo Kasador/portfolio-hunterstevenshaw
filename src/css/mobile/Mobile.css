@@ -25,7 +25,7 @@
 
   /* >>>>> MAIN SCREEN STARTS HERE >>>>> */
   .mobile-main {
-     background-image: url(/public/assets/img/mobile/iPhone_Wallper_BG_v3.jpg);
+     background-image: url(/src/img/mobile/iPhone_Wallper_BG_v3.jpg);
      position: absolute;
      background-size: cover;
      width: 250px;

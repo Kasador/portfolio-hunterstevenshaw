@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../css/desktop/Desktop.css';
+import logo from '../img/desktop/Windows7_Logo.png';
 
 function Desktop() {
   const [isBootupComplete, setIsBootupComplete] = useState(false);
@@ -42,8 +43,14 @@ function Desktop() {
       {/* Desktop content (login or anything else) */}
       {isBootupComplete && (
         <div className="desktop-main">
-          {/* Windows 7 emulation code or login screen */}
-          <h2>Windows 7 Login Screen</h2>
+          <div className="login-screen">
+            <footer>
+              <img
+                className="windows7-logo"
+                src={logo} 
+                alt="Windows 7 Logo" />
+            </footer>
+          </div>
         </div>
       )}
     </div>

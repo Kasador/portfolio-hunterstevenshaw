@@ -24,10 +24,18 @@
     left: 50%;
     transform: translate(-50%, -45%);
   }
+  .login-screen footer {
+    position: absolute;
+    bottom: 20px;
+    right: 455px;
+  }
+  .windows7-logo {
+    width: 180px;
+  }
 
   /* >>>>> MAIN SCREEN STARTS HERE >>>>> */
   .desktop-main {
-     background-image: url(/public/assets/img/desktop/Windows7_Login_Screen_BG.png);
+     background-image: url(/src/img/desktop/Windows7_Login_Screen_BG.png);
      position: absolute;
      background-size: cover;
      width: 1095px;
