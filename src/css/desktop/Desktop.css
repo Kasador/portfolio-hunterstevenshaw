@@ -63,7 +63,7 @@
   }
 
   .login-input-wrapper {
-
+    display: none;
   }
 
   #input-login-field {

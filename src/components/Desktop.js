@@ -16,6 +16,10 @@ function Desktop() {
   useEffect(() => {
     if (isBootupComplete && loginPictureRef.current) {
       const loginPictureElement = loginPictureRef.current;
+      const getLoginAssets = document.querySelector('.login-input-wrapper');
+      const getSwitchUserBtn = document.querySelector('.switch-user-btn');
+      const getInputField = document.querySelector('#input-login-field');
+      const getLoginBtn = document.querySelector('.login-btn');
 
       // const getPicture = loginPicture;
 
@@ -27,12 +31,34 @@ function Desktop() {
         loginPictureElement.style.cursor = 'default';
       };
 
-      // Add event listeners
+      // Add event listeners >>>
+      // Event handler for profile pricture
       loginPictureElement.addEventListener('click', () => {
         // Test if clicked
         console.log('You clicked the picture!');
-
+        getLoginAssets.style.display = 'block';
       }); 
+
+      // Event handler for switch button
+      getSwitchUserBtn.addEventListener('click', () => {
+        // Test if clicked
+        console.log('You clicked switch user button!');
+        getLoginAssets.style.display = 'none';
+      }); 
+
+      // Event handler for login button
+      getLoginBtn.addEventListener('click', () => {
+        // Test if clicked
+        console.log('You clicked the login button!');
+        let passwordInfo = getInputField.value;
+
+        if (!passwordInfo.reportValidity()) {
+          console.log(`You can't login without a password.`);
+        }
+        console.log(`The password you entered was ${passwordInfo}`);
+      }); 
+
+
       loginPictureElement.addEventListener('mouseenter', handleMouseEnter);
       loginPictureElement.addEventListener('mouseleave', handleMouseLeave);
 
