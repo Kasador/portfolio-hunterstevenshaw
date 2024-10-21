@@ -35,7 +35,7 @@ function Desktop() {
       // Event handler for profile pricture
       loginPictureElement.addEventListener('click', () => {
         // Test if clicked
-        console.log('You clicked the picture!');
+        // console.log('You clicked the picture!');
         getLoginAssets.style.display = 'block';
       }); 
 
@@ -49,12 +49,12 @@ function Desktop() {
       // Event handler for login button
       getLoginBtn.addEventListener('click', () => {
         // Test if clicked
-        console.log('You clicked the login button!');
-        let passwordInfo = getInputField.value;
+        // console.log('You clicked the login button!');
 
-        if (!passwordInfo.reportValidity()) {
+        if (!getInputField.reportValidity()) {
           console.log(`You can't login without a password.`);
         }
+        let passwordInfo = getInputField.value;
         console.log(`The password you entered was ${passwordInfo}`);
       }); 
 
