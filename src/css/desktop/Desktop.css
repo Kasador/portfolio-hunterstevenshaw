@@ -82,10 +82,11 @@
 
   .switch-user-btn {
     position: absolute;
-    left: 23px;
+    left: 21px;
     bottom: -40px;
     cursor: pointer;
     width: 100px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   /* footer */
@@ -97,6 +98,12 @@
 
   .windows7-logo {
     width: 180px;
+  }
+
+  .power-btn {
+    position: absolute;
+    right: -425px;
+    bottom: -3px;
   }
 
   /* >>>>> MAIN SCREEN STARTS HERE >>>>> */

@@ -4,6 +4,7 @@ import logo from '../img/desktop/login_screen/Windows7_Logo.png';
 import loginPicture from '../img/desktop/login_screen/Me.jpg';
 import loginBtn from '../img/desktop/login_screen/Input_Btn.png';
 import switchUserBtn from '../img/desktop/login_screen/Switch_User_Btn.png';
+import powerBtn from '../img/desktop/login_screen/Shutdown_Btn.png';
 
 function Desktop() {
   const [isBootupComplete, setIsBootupComplete] = useState(false);
@@ -107,6 +108,10 @@ function Desktop() {
                 className="windows7-logo"
                 src={logo} 
                 alt="Windows 7 Logo" />
+              <img
+                className="power-btn"
+                src={powerBtn} 
+                alt="Windows 7 shutdown power button" />
             </footer>
           </div>
         </div>
