@@ -42,7 +42,7 @@ function Desktop() {
       // Event handler for switch button
       getSwitchUserBtn.addEventListener('click', () => {
         // Test if clicked
-        console.log('You clicked switch user button!');
+        // console.log('You clicked switch user button!');
         getLoginAssets.style.display = 'none';
       }); 
 
