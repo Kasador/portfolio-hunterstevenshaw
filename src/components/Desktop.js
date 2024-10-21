@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import '../css/desktop/Desktop.css';
 import logo from '../img/desktop/login_screen/Windows7_Logo.png';
 import loginPicture from '../img/desktop/login_screen/Me.jpg';
+import loginBtn from '../img/desktop/login_screen/Input_Btn.png';
+import switchUserBtn from '../img/desktop/login_screen/Switch_User_Btn.png';
 
 function Desktop() {
   const [isBootupComplete, setIsBootupComplete] = useState(false);
@@ -14,6 +16,8 @@ function Desktop() {
     if (isBootupComplete && loginPictureRef.current) {
       const loginPictureElement = loginPictureRef.current;
 
+      // const getPicture = loginPicture;
+
       const handleMouseEnter = () => {
         loginPictureElement.style.cursor = 'pointer';
       };
@@ -23,6 +27,11 @@ function Desktop() {
       };
 
       // Add event listeners
+      loginPictureElement.addEventListener('click', () => {
+        // Test if clicked
+        console.log('You clicked the picture!');
+
+      }); 
       loginPictureElement.addEventListener('mouseenter', handleMouseEnter);
       loginPictureElement.addEventListener('mouseleave', handleMouseLeave);
 
@@ -79,6 +88,18 @@ function Desktop() {
                   className="login-picture"
                   src={loginPicture}
                   alt="Hunter Steven Shaw, the Developer" />
+              </div>
+              <span id="login-username">Hunter Shaw</span> {/* Login Username */}
+              <div className="login-input-wrapper">
+                <input type='password' id="input-login-field"></input>
+                <img
+                  className="login-btn"
+                  src={loginBtn}
+                  alt="Button to login" />
+                  <img
+                  className="switch-user-btn"
+                  src={switchUserBtn}
+                  alt="Button to switch users" />
               </div>
             </section>
             <footer>
